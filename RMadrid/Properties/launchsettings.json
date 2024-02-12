@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "RMadrid (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "RMadrid (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}

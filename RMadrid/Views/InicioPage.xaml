@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="RMadrid.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="ContentArea">
+        <ScrollViewer>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Imagen con texto -->
+                <StackPanel Grid.Row="0" Margin="10">
+                    <Image Source="C:\Users\alvarogasca\source\repos\RMadrid\RMadrid\Assets\real-madrid-logo-png-24641.png" Width="100" Height="100" Margin="0,0,10,0"/>
+                    <HyperlinkButton NavigateUri="https://www.estadiodeportivo.com/futbol/champions-league/union-berlin-real-madrid-joselu-ceballos-abrochan-una-fase-grupos-perfecta-20231212-437126.html">
+                    <Image Source="C:\Users\alvarogasca\source\repos\RMadrid\RMadrid\Assets\portada.png" Stretch="UniformToFill"/>
+                    </HyperlinkButton>
+                    <HyperlinkButton NavigateUri="https://www.hoylunes.com/2023/12/14/real-madrid-bayern-vuelve-la-euroliga-al-wizink-center/https://www.hoylunes.com/2023/12/14/real-madrid-bayern-vuelve-la-euroliga-al-wizink-center/">
+                        <Image Source="C:\Users\alvarogasca\source\repos\RMadrid\RMadrid\Assets\noticia1.png" Width="300" Height="300" />
+                    </HyperlinkButton>
+                    <HyperlinkButton NavigateUri="https://onefootball.com/es/noticias/el-real-madrid-conocera-el-lunes-a-su-rival-en-los-octavos-de-final-de-la-champions-38722733https://onefootball.com/es/noticias/el-real-madrid-conocera-el-lunes-a-su-rival-en-los-octavos-de-final-de-la-champions-38722733" Margin="345,-313,0,0">
+                        <Image Source="C:\Users\alvarogasca\source\repos\RMadrid\RMadrid\Assets\noticia2.png" Width="300" Height="300"/>
+                    </HyperlinkButton>
+                    <HyperlinkButton NavigateUri="https://www.marca.com/futbol/champions-league-femenina/paris-fc-r-madrid/2023/12/14/01_0183_20231214_13737_16928-directo.htmlhttps://www.marca.com/futbol/champions-league-femenina/paris-fc-r-madrid/2023/12/14/01_0183_20231214_13737_16928-directo.html" Margin="690,-300,0,0">
+                        <Image Source="C:\Users\alvarogasca\source\repos\RMadrid\RMadrid\Assets\noticia3.png" Width="300" Height="300"/>
+                    </HyperlinkButton>
+                </StackPanel>
+
+                <!-- Datos del evento -->
+                <Grid Grid.Row="1" Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <!-- Contenido en la mitad izquierda -->
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="Partidos:" FontWeight="Bold" FontSize="40"/>
+                        <TextBlock Text="Datos del próximo evento" FontWeight="Bold" FontSize="26"/>
+                        <TextBlock Text="Fecha: 23 de marzo de 2022"/>
+                        <TextBlock Text="Competición: LaLiga"/>
+                        <TextBlock Text="Hora: 21:00"/>
+                        <TextBlock Text="Lugar: WiZink Center, Madrid"/>
+                        <TextBlock Text=""/>
+                        <TextBlock Text="Entradas" FontWeight="Bold" FontSize="26"/>
+                        <TextBlock Text="Apartadas: 1400"/>
+                        <TextBlock Text="Disponibles: 600"/>
+                        <Button Content="Comprar Entradas" FontSize="16" Margin="0,10,0,0" Click="ComprarEntradas_Click"/>
+                        <TextBlock Text=""/>
+                        <TextBlock Text="Equipo contrario" FontWeight="Bold" FontSize="26"/>
+                        <TextBlock Text="Nombre del equipo: Barcelona"/>
+                        <TextBlock Text="Entrenador: Xavi Hernández"/>
+                        <TextBlock Text="Estadísticas: Perdedores 5 de sus últimos 6 partidos"/>
+                        <TextBlock Text=""/>
+                    </StackPanel>
+                    <!-- Imagen en la mitad derecha -->
+                    <Image Grid.Column="1" Source="C:\Users\alvarogasca\source\repos\RMadrid\RMadrid\Assets\bernabeu.jpeg" Width="600" Height="450"/>
+                </Grid>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Page>
